@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <script src='js/bootstrap.min.js'></script>
+    <style>
+        #light {
+
+            background-color: lightgray;
+        }
+
+        #dark {
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-4" id="light">
+            <div class="card-fluid border border-dark rounded col-3 p-0" id="card1">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(1)" id="check1" /></div>
+                    <img class="card-img mt-2" src="/images/1.jpg"><br><br>
+
+                    <b>Name: </b> <span id="name1">Leatherette Handbag</span><br>
+                    <b>Desciption: </b> Material : Leatherette
+                    25 centimeters height X 18 centimeters length X 10 centimeters width
+                    Lino Perros Tan Leatherette Handbag
+                    Do not expose to extreme heat<br>
+                    <b>Price: </b><span id="p1">610</span><br>
+                    <div class="row">
+                        <div class="col-2"><b>Qty:</b></div>
+                        <div class="col-6"><input value="1" id="q1" class="form-control" type="text"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3 p-0" id="card2">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(2)" id="check2" /></div>
+                    <img class="card-img-top mt-2" src="/images/2.jpg"><br><br><br>
+
+                    <b>Name: </b> <span id="name2">Baby's Shoe</span><br>
+                    <b>Desciption: </b>Sole: Polyurethane
+                    Closure: Snap
+                    Shoe Width: Medium
+                    Bright Led Light Installed In Shoes
+                    Available In Fresh Colors Suitable On Every Outfits
+                    Easy To Walk And Comfortable To Wear<br>
+                    <b>Price: </b><span id="p2">449</span><br>
+                    <div class="row">
+                        <div class="col-2"><b>Qty:</b></div>
+                        <div class="col-6"><input value="1" id="q2" class="form-control" type="text"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card3">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(3)" id="check3" /></div>
+                    <img class="card-img-top mt-4" src="/images/3.jpg">
+                    <br><br><br>
+                    <b>Name: </b> <span id="name3">Genuine Leather Laptop Bag</span><br>
+                    <b>Desciption: </b> Real Leather Quality
+                    Waterproof & Durable : The Laptop Messenger Bag
+                    Is Durable Fabric Lining.It Is Also Most Important To Use Good Quality<br>
+                    <b>Price: </b><span id="p3">1010</span><br>
+                    <div class="row">
+                        <div class="col-2"><b>Qty:</b></div>
+                        <div class="col-6"><input value="1" id="q3" class="form-control" type="text"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card4">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(4)" id="check4" /></div>
+                    <img class="card-img" src="/images/4.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name4">Dekor Ceramic Tea Cups</span><br>
+                        <b>Desciption: </b>Color: Blue
+                        Package Contents: 6-Piece Tea Mug
+                        Material: Ceramic
+                        Highly chip resistant and durable, microwave,
+                        oven and diswasher safe, lead and cadmium free<br>
+                        <b>Price: </b><span id="p4">399</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q4" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-4 " id="dark">
+            <div class="card-fluid border border-dark rounded col-3" id="card5">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(5)" id="check5" /></div>
+                    <img class="card-img" src="/images/5.jpg">
+                    <div class="card-body"><br>
+                        <b>Name: </b> <span id="name5">Desktop Calculator</span><br>
+                        <b>Desciption: </b> Larger display makes more data easier to read
+                        Solar powered when light is sufficient,
+                        battery powered when light is insufficient
+                        Key operations are stored in a buffer,
+                        Screen Size: 22.9(W) x 94(L) mm<br>
+                        <b>Price: </b><span id="p5">300</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q5" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card6">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(6)" id="check6" /></div>
+                    <img class="card-img" src="/images/6.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name6"> boAt Airdopes</span><br>
+                        <b>Desciption: </b> With a dual tone finish on a lightweight design
+                        weighing just around 4g per earbud,ready
+                        to groove in full flow with boAt Airdopes 121v2 offers true wireless experience
+                        for real time audio with Bluetooth v5.0<br>
+                        <b>Price: </b><span id="p6">849</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q6" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card7">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(7)" id="check7" /></div>
+                    <img class="card-img mt-4" src="/images/7.jpg"><br>
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name7">Watch Analog White Dial </span><br>
+                        <b>Desciption: </b> Dial Color: White, Case Shape: Round
+                        Band Color: Brown, Band Material: Leather
+                        Watch Movement Type: Quartz, Watch Display Type: Analog
+                        Case Material: Stainless Steel.<br>
+                        <b>Price: </b><span id="p7">1100</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q7" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card8">
+                <div class="card-body">
+                    <div class="text-center "><input type="checkbox" onclick="pro(8)" id="check8" /></div>
+                    <img class="card-img" src="/images/8.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name8"> Card Case Wallet </span><br>
+                        <b>Desciption: </b> Stylish Leather Pocket Spacious compartment
+                        Can be considered as a gifting item
+                        Made of quality materialBrand Generic
+                        Material:Leather
+                        Style:Casual
+                        ClosureType:Magnetic
+                        Lining Description:Leather<br>
+                        <b>Price: </b><span id="p8">200</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q8" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" id="light">
+            <div class="card-fluid border border-dark rounded col-3" id="card9">
+                <div class="card-body">
+                    <div class="text-center mt-0"><input type="checkbox" onclick="pro(9)" id="check9" /></div>
+                    <img class="card-img-top mt-4" src="/images/9.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name9">Kids with Remote Control Car</span><br>
+                        <b>Desciption: </b> 4 function remote control: forward; backward
+                        Innovative design: nice color and good design of the car. Size of the car is around 7 inches
+                        wide
+                        Requirement: 2 AA batteries required for remote
+                        New model 2020. Kids love this car. Small compact and handy<br>
+                        <b>Price: </b><span id="p9">500</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q9" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card10">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(10)" id="check10" /></div>
+                    <img class="card-img" src="/images/10.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name10">SOFT TOYS Big Teddy</span><br>
+                        <b>Desciption: </b>Create a buy a novelty soft toy for any occasion; with our adorable
+                        range of cuddly animals.
+                        A Perfact Gift For Birthdays and many other Occasions for Girl; Boy and Kids as well.
+                        Aside from the size;there are also choices on the color of the bear as well. Whether you
+                        prefer a vanilla
+                        creamcolor<br>
+                        <b>Price: </b><span id="p10">699</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q10" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card11">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(11)" id="check11" /></div>
+                    <img class="card-img" src="/images/11.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name11">Divergent Series-4in1</span><br>
+                        <b>Desciption: </b> The popular Divergent Trilogy has been written by Veronica Roth.
+                        It is a young Adult Sci-Fi series and is categorized among books like The Maze Runner or The
+                        Hunger Games.
+                        as a set of 4-in-1 with a fourth book called 'Four’ by the same author along with the
+                        Trilogy.<br>
+                        <b>Price: </b><span id="p11">210</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q11" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card12">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(12)" id="check12" /></div>
+                    <img class="card-img" style="width:210px;" src="/images/12.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name12"> Wireless Mouse</span><br>
+                        <b>Desciption: </b> Stylish Leather Pocket Spacious compartment
+                        Can be considered as a gifting item
+                        Made of quality materialBrand Generic
+                        Material:Leather
+                        ClosureType:Magnetic
+                        Connector Type USB
+                        Brand Logitech
+                        Special Feature Wireless,
+                        Colour:Black<br>
+                        <b>Price: </b><span id="p12">450</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q12" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4
+        
+        " id="dark">
+            <div class="card-fluid border border-dark rounded col-3" id="card13">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(13)" id="check13" /></div>
+                    <img class="card-img mt-4" src="/images/13.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name13">Vintage Clock Wood Wall Clock</span><br>
+                        <b>Desciption: </b>Hand-Crafted Clock with Hand-Painting Varli Art Work , Design with
+                        Royal Touch - Comes with Batteries and Screws for Wall Hanging
+                        Clock Size : 16 x 16 Inches ( 40 x 40 CMS) ,
+                        Dial Size : 10 Inches (25 CMS)
+                        Perfect for : Living Room , Bedroom , Hall / Guest Room , Kitchen , Office ,
+                        also a unique and useful gift purpose product<br>
+                        <b>Price: </b><span id="p13">500</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q13" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card14">
+                <div class="card-body">
+                    <div class="text-center mt-0"><input type="checkbox" onclick="pro(14)" id="check14" /></div>
+                    <img class="card-img" src="/images/14.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name14">WOW Skin Science Onion Oil
+                            Hair Care Kit</span><br>
+                        <b>Desciption: </b> Get strong and lustrous hair with this hair kit.
+                        This kit contains onion oil shampoo, onion oil conditioner and onion hair oil which helps to
+                        revive your tired scalp and hair
+                        Red onion extract, black seed oil aid in rejuvenating tired scalp and weak hair
+                        The ultimate kit works on your hair to cleanse away buildup and improve quality of strands<br>
+                        <b>Price: </b><span id="p14">799</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q14" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card15">
+                <div class="card-body">
+                    <div class="text-center mt-0"><input type="checkbox" onclick="pro(15)" id="check15" /></div>
+                    <img class="card-img" src="/images/15.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name15">Quaker Oats Pouch</span><br>
+                        <b>Desciption: </b>Get great savings and a great taste with Quaker oats mega saver pack
+                        and get 500g free with 1.5Kg pack of Quaker oats
+                        Quaker oats is made from 100 percent wholegrain oats, which is a natural source of
+                        carbohydrates, protein and dietary fibre
+                        Garnish your wholesome bowl of oats with your favourite fruits and nuts to make it more
+                        delicious<br>
+                        <b>Price: </b><span id="p15">285</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q15" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid border border-dark rounded col-3" id="card16">
+                <div class="card-body">
+                    <div class="text-center"><input type="checkbox" onclick="pro(16)" id="check16" /></div>
+                    <img class="card-img" src="/images/16.jpg">
+                    <div class="card-body">
+                        <b>Name: </b> <span id="name16">Mamaearth Ubtan Natural Face</span><br>
+                        <b>Desciption: </b> NATURAL REMEDY FOR PIGMENTED SKIN -
+                        Our dermatologically tested everyday non-greasy cream creates a protective barrier on the
+                        skin. Packed with powerful ingredients like Mulberry Extract with lavender oil,
+                        it calms and soothes the skin, reducing the appearance of dark spots, age spots,
+                        discoloration, loss of skin elasticity.<br>
+                        <b>Price: </b><span id="p16">650</span><br>
+                        <div class="row">
+                            <div class="col-2"><b>Qty:</b></div>
+                            <div class="col-6"><input value="1" id="q16" class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br>
+        <h4>Ordered Item</h4>
+        <div class="row">
+            <div class="col-12">
+                <table id="tab" class="">
+
+                </table>
+            </div>
+
+            <br><br>
+        </div>
+        <hr>
+        <button class="btn btn-outline-primary bg-primary text-light" data-bs-toggle="modal" data-bs-target="#m"
+            type="button" onclick="total()">Display Total Amount For
+            Shopping<i class="bi bi-search"></i></button>
+    </div>
+
+    <div class="modal fade" id="m" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="div1"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var sum = 0;
+        var count = 0;
+
+        function pro(a) {
+            var c = document.getElementById('check' + a)
+            if (c.checked) {
+
+                document.getElementById('q' + a).disabled = true
+
+                document.getElementById('card' + a).style.backgroundColor = '#FA8072'
+                var ele = document.createElement("tr")
+                ele.id = "row" + a
+                document.getElementById('tab').appendChild(ele)
+
+                var ge = document.createElement('td')
+                ge.id = a
+                document.getElementById('row' + a).appendChild(ge)
+
+                var ge = document.createElement('td')
+                ge.id = "item" + a
+                document.getElementById('row' + a).appendChild(ge)
+
+                var ge = document.createElement('td')
+                ge.id = "price" + a
+                document.getElementById('row' + a).appendChild(ge)
+
+                var ge = document.createElement('td')
+                ge.id = "quantity" + a
+                document.getElementById('row' + a).appendChild(ge)
+
+                var ge = document.createElement('td')
+                ge.id = "total" + a
+                document.getElementById('row' + a).appendChild(ge)
+
+                var name = document.getElementById("name" + a)
+                var price = document.getElementById("p" + a)
+                var qt = document.getElementById("q" + a).value
+                var pr = parseInt(price.textContent) * qt
+                sum = sum + pr
+                count++
+
+                document.getElementById(a).innerHTML = count + '.&emsp;'
+                document.getElementById("item" + a).innerHTML = name.textContent + '&emsp;'
+                document.getElementById("price" + a).innerHTML = price.textContent + '&emsp;'
+                document.getElementById("quantity" + a).innerHTML = qt + '&emsp;'
+                document.getElementById('total' + a).innerHTML = pr + "&emsp;"
+
+            } else {
+                count--
+                var price = document.getElementById("p" + a)
+                var qt = document.getElementById("q" + a).value
+                var pr = parseInt(price.textContent) * qt
+                sum = sum - pr
+                document.getElementById('q' + a).disabled = false
+                document.getElementById(a).innerHTML = count + '.&emsp;'
+                document.getElementById('tab').removeChild(document.getElementById('row' + a))
+                if (1 <= a && a <= 4 || 9 <= a && a <= 12) {
+                    document.getElementById('card' + a).style.backgroundColor = '#9ACD32'
+
+                } else if (5 <= a && a <= 8 || 13 <= a && a <= 16) {
+                    document.getElementById('card' + a).style.backgroundColor = '#DAA520'
+
+                }
+            }
+        }
+        function total() {
+            document.getElementById("div1").innerHTML =
+                ("Total Price: " + "Rs." + sum)
+        }
+    </script>
+
+</body>
+
+</html>
